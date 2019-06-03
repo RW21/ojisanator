@@ -38,6 +38,7 @@ def add_ojisan(parsed: list):
         elif '助動詞' in word[3] and '特殊' not in word[4]:
             # catches ない to not kanakanalise it.
             word_list.append(jaconv.hira2kata(word[0]))
+            word_list.append(random_emote())
 
         elif '終助詞' in word[3]:
             word_list.append(jaconv.hira2kata(word[0]))
